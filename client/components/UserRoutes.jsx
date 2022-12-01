@@ -1,6 +1,7 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 
-function UserRoutes () {
+function UserRoutes() {
   return <h2>logged in</h2>
 }
 
