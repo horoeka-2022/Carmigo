@@ -4,19 +4,14 @@ import Fruits from './Fruits'
 
 import Nav from './Nav'
 import Profile from './Profile'
+import RegisterRoutes from './RegisterRoutes'
+import UserRoutes from './UserRoutes'
 
 function App() {
   return (
     <>
-      <div className="App">
-        <Nav />
-        <main className="flex items-center justify-center h-screen">
-          <Routes>
-            <Route path="/" element={<Fruits />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
-        </main>
-      </div>
+      <RegisterRoutes />
+      <UserRoutes />
     </>
   )
 }
