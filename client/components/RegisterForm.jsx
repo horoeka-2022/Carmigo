@@ -9,7 +9,7 @@ const eventSchema = Yup.object({
 })
 
 export default function ProduceForm({
-  submitProduce,
+  submitForm,
   gardens,
   produceTypes,
   initialFormData,
@@ -18,14 +18,14 @@ export default function ProduceForm({
   return (
     <>
       <section className="px-20 py-24 ">
-        <h1 className="form-title text-2xl font-semibold font-sans ">
+        <h1 className="form-title text-2xl font-semibold font-sans">
           First Name
         </h1>
         <Formik
           initialValues={initialFormData}
           validationSchema={eventSchema}
           onSubmit={(values) => {
-            submitProduce(values)
+            submitForm(values)
           }}
         >
           {({ errors, touched }) => (

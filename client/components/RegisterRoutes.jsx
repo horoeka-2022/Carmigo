@@ -8,6 +8,7 @@ function RegisterRoutes() {
     <IfNotAuthenticated>
       <Routes>
         <Route path="/" element={<SignIn />} />
+        <Route path="/profile" element={<></>} />
       </Routes>
     </IfNotAuthenticated>
   )
