@@ -26,9 +26,9 @@ function Nav() {
 
   return (
     <>
-      <section className="h-screen flex flex-col bg-blue-500 text-white flex justify-between items-center pt-44">
-        <img className="object-contain h-52 w-96 " src="logo.png" />
-        <nav className="flex flex-col justify-end  gap-4 mb-8 ">
+      <section className="h-screen flex flex-col bg-blue-500 text-white justify-between items-center pt-44">
+        <img className="object-contain h-52 w-96" src="logo.png" />
+        <nav className="flex flex-col justify-end  gap-4 mb-8">
           <IfNotAuthenticated>
             <Link
               to="/"
@@ -62,4 +62,4 @@ function Nav() {
 
 export default Nav
 
-////HOME PAGE//////////
+////First Page//////////

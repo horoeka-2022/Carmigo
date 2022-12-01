@@ -26,15 +26,17 @@ function Nav() {
 
   return (
     <>
-      <section className="h-screen flex flex-col bg-blue-500 text-white flex justify-between items-center pt-44">
-        <img className="object-contain h-52 w-96 mt-4" src="logo.png" />
+      <img
+        className="object-contain h-52 w-96 absolute inset-x-0 top-0"
+        src="logo.png"
+      />
+      <section className="h-screen flex flex-col bg-blue-500 text-white justify-between items-center pt-44">
         <nav className="flex flex-col justify-end  gap-4 mb-8">
           <IfAuthenticated>
-            s
             <Link
               to="/"
               onClick={handleLogoff}
-              className="border-solid border-2 px-8 py-2 border-blue-600 rounded-3xl hover:bg-zinc-600"
+              className="border-solid border-2 px-8 py-2 border-white rounded-3xl hover:bg-zinc-600 absolute top-0 right-0"
             >
               Sign Out
             </Link>
@@ -47,4 +49,4 @@ function Nav() {
 
 export default Nav
 
-///////SIGN IN PAGE///////////////////////
+///////Second Page////////////
