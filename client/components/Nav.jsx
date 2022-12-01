@@ -9,7 +9,7 @@ function Nav() {
 
   function handleLogoff(e) {
     e.preventDefault()
-    logout({ returnTo: `${window.location.origin}/signin` })
+    logout()
   }
 
   function handleRegister(e) {
@@ -27,14 +27,29 @@ function Nav() {
   return (
     <>
       <section className="h-screen flex flex-col bg-blue-500 text-white flex justify-between items-center pt-44">
-        <img className="object-contain h-52 w-96 mt-4" src="logo.png" />
-        <nav className="flex flex-col justify-end  gap-4 mb-8">
+        <img className="object-contain h-52 w-96 " src="logo.png" />
+        <nav className="flex flex-col justify-end  gap-4 mb-8 ">
+          <IfNotAuthenticated>
+            <Link
+              to="/"
+              onClick={handleRegister}
+              className="border-solid border-2 px-8 py-2 border-white rounded-3xl hover:bg-zinc-600"
+            >
+              Create Account
+            </Link>
+            <Link
+              to="/"
+              onClick={handleSignIn}
+              className="border-solid border-2 px-8 py-2 border-white rounded-3xl text-center hover:bg-zinc-600"
+            >
+              Sign In
+            </Link>
+          </IfNotAuthenticated>
           <IfAuthenticated>
-            s
             <Link
               to="/"
               onClick={handleLogoff}
-              className="border-solid border-2 px-8 py-2 border-blue-600 rounded-3xl hover:bg-zinc-600"
+              className="border-solid border-2 px-8 py-2 border-white rounded-3xl hover:bg-zinc-600 absolute top-0 right-0"
             >
               Sign Out
             </Link>
@@ -47,4 +62,4 @@ function Nav() {
 
 export default Nav
 
-///////SIGN IN PAGE///////////////////////
+////HOME PAGE//////////
