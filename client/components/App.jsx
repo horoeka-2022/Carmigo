@@ -12,10 +12,3 @@ function App() {
 }
 
 export default App
-
-// <Header />
-// <h1>This is the start page</h1>
-// <Cards />
-// <Buttons />
-// <Chats />
-// <SingleChat />

@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
       redirectUri={window.location.origin}
       audience="https://carmigo/api"
     >
-        <Router>
-          <App />
-        </Router>
+      <Router>
+        <App />
+      </Router>
     </Auth0Provider>,
     document.getElementById('app')
   )
