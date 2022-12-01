@@ -10,10 +10,10 @@ import store from './slices'
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Auth0Provider
-      domain="dev-l15ujwk4.au.auth0.com"
-      clientId="W1zHcnGihSz4yraMmDFQ8NNrOQsOjFEW"
+      domain="dev-jkpvp28ykafjk7db.us.auth0.com"
+      clientId="4Gh9GkpBAujG5DBxwoQAmnbskxSLHbqy"
       redirectUri={window.location.origin}
-      audience="https://fruits/api"
+      audience="https://carmigo/api"
     >
       <Provider store={store}>
         <Router>
