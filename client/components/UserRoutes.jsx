@@ -1,12 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from './Header'
+import Footer from './Footer'
 
 function UserRoutes() {
   return (
     <>
       <h2>logged in</h2>
-      <Header />
+      <Footer />
     </>
   )
 }
