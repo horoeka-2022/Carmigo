@@ -4,7 +4,7 @@ import { IoCarSportSharp, TiMessages } from 'react-icons/all'
 function Footer() {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="h-screen flex justify-center items-end">
         <div className="flex justify-center mt-96 mb-4 gap-9 px-9 border-2 mr-14 w-min">
           <IoCarSportSharp size={77} />
           <img
