@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
+
 import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 
-function SignUp() {
+function SignIn() {
   const { logout, loginWithRedirect, user, isLoading } = useAuth0()
 
   function handleLogoff(e) {
@@ -50,4 +51,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default SignIn
