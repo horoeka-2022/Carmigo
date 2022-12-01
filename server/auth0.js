@@ -7,8 +7,8 @@ const request = require('superagent')
 dotenv.config()
 
 // TODO: set the domain and audience (API Identifier)
-const domain = 'https://dev-l15ujwk4.au.auth0.com'
-const audience = 'https://fruits/api'
+const domain = 'https://dev-jkpvp28ykafjk7db.us.auth0.com'
+const audience = 'https://carmigo/api'
 const checkJwt = jwt({
   secret: jwks.expressJwtSecret({
     cache: true,
@@ -22,9 +22,9 @@ const checkJwt = jwt({
 })
 
 // https://auth0.github.io/node-auth0/ManagementClient.html
-const managementDomain = 'dev-l15ujwk4.au.auth0.com'
-const managementAudience = 'https://dev-l15ujwk4.au.auth0.com/api/v2/'
-const clientId = 'EqeUttJVHV41MvTLpMJZK1S6oGCyILz6'
+const managementDomain = 'dev-jkpvp28ykafjk7db.us.auth0.com' //done
+const managementAudience = 'https://dev-jkpvp28ykafjk7db.us.auth0.com/api/v2/' //done
+const clientId = '6bTAyrmUOIuDquMp8W7pc6tOVPafT0qf' //done
 const clientSecret = process.env.AUTH0_API_SECRET || 'empty-secret'
 const scope = 'read:users'
 
