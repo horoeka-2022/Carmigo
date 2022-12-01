@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <RegisterRoutes />
-      <UserRoutes />
+      {/* <UserRoutes /> */}
     </>
   )
 }

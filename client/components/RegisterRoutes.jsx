@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { IfNotAuthenticated } from './Authenticated'
+import CarTinderCards from './CarTinderCards'
 import SignIn from './SignIn'
 
 function RegisterRoutes() {
   return (
     <IfNotAuthenticated>
       <Routes>
-        <Route path="/" element={<SignIn />} />
+        <Route path="/" element={<CarTinderCards />} />
         <Route path="/profile" element={<></>} />
       </Routes>
     </IfNotAuthenticated>
