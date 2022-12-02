@@ -7,7 +7,6 @@ import SignIn from './SignIn'
 function RegisterRoutes() {
   return (
     <Routes>
-      <Route path="/signin" element={<SignIn />} />
       <Route
         path="/"
         element={
@@ -17,6 +16,7 @@ function RegisterRoutes() {
           </>
         }
       />
+      <Route path="/signin" element={<SignIn />} />
       <Route path="/profile" element={<>here is my profile</>} />
     </Routes>
   )

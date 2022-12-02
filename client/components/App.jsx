@@ -18,15 +18,3 @@ function App() {
 }
 
 export default App
-
-// return (
-//   <Logo />
-
-//   <Routes>
-//     <Route path='/' element={<Swipey/>}/>
-//     <Route path='/profile' element={<Profile/>}/>
-//     <Route path='/msg' element={<Msg/>}/>
-//   </Routes>
-//   <Nav/>
-
-// )
