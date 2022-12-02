@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
+    "@react-spring/web": "^9.5.5",
     "@vscode/sqlite3": "^5.0.7",
     "auth0": "^2.44.0",
     "express": "^4.17.1",
@@ -40,6 +41,7 @@
     "formik": "^2.2.9",
     "jwks-rsa": "^2.0.4",
     "knex": "^1.0.1",
+    "react-tinder-card": "^1.6.2",
     "yup": "^0.32.11",
     "react-icons": "^4.7.1"
   },
