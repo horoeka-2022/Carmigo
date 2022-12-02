@@ -23,9 +23,9 @@ function UserRoutes() {
   // }, [])
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center overflow-hidden">
+    <div className="w-screen h-screen flex flex-col justify-center items-center overflow-hidden bg-blue-500">
       <Logo />
-      {/*TODO: create Logo component*/}
+      {/*DONE*/}
       <Routes>
         <Route path="/" element={<SwipePage />} />
         {/* SwipePage done by Richard */}
