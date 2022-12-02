@@ -1,23 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './Home'
-import Nav from './Nav'
-import SignIn from './SignIn'
+import Home from '../components/Home'
+import CreateAccount from '../components/CreateAccount'
+import SignIn from '../components/SignIn'
 
 function RegisterRoutes() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Nav />
-            <Home />
-          </>
-        }
-      />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/profile" element={<>here is my profile</>} />
+      <Route path="/" element={<CreateAccount />} />
     </Routes>
   )
 }

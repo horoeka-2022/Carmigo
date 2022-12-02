@@ -30,7 +30,7 @@ function SwipePage() {
 
   return (
     <>
-      <div className="w-11/12 h-5/6 justify-center items-center overflow-hidden border-2 border-solid border-red-400 ">
+      <div className="w-80 h-4/5 justify-center items-center overflow-hidden ">
         {characters.map((character) => (
           <TinderCard
             className="absolute w-full h-5/6 overflow-hidden"
@@ -40,7 +40,7 @@ function SwipePage() {
           >
             <div
               style={{ backgroundImage: 'url(' + character.url + ')' }}
-              className="relative w-11/12 h-5/6 bg-cover bg-center rounded-3xl"
+              className="relative w-80 h-4/5 bg-cover bg-center rounded-3xl"
             >
               <h3>{character.name}</h3>
             </div>
