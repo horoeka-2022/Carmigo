@@ -25,7 +25,7 @@ function HomePage() {
     <>
       <section className="h-screen w-screen flex flex-col bg-blue-500 text-white items-center">
         <div className="flex flex-col h-full w-full justify-center items-center">
-          <img className="h-24 w-72 justify-center" src="logo.png" alt="logo" />
+          <img className="h-25 w-72 justify-center" src="logo.png" alt="logo" />
         </div>
         <nav className="flex flex-col justify-end  gap-4 mb-8">
           <Link

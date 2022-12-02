@@ -34,7 +34,7 @@ function SwipePage() {
 
   return (
     <>
-      <div className="w-80 h-4/5 justify-center items-center overflow-hidden bg-blue-500">
+      <div className="w-80 h-4/6 justify-center items-center overflow-hidden bg-blue-500">
         {characters.map((character) => (
           <TinderCard
             className="absolute w-full h-5/6 overflow-hidden"
