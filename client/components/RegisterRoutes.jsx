@@ -1,16 +1,25 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { IfNotAuthenticated } from './Authenticated'
+import Home from './Home'
+import Nav from './Nav'
 import SignIn from './SignIn'
 
 function RegisterRoutes() {
   return (
-    <IfNotAuthenticated>
-      <Routes>
-        <Route path="/" element={<SignIn />} />
-        <Route path="/profile" element={<></>} />
-      </Routes>
-    </IfNotAuthenticated>
+    <Routes>
+      <Route path="/signin" element={<SignIn />} />
+      <Route
+        path="/"
+        element={
+          <>
+            <Nav />
+            <Home />
+          </>
+        }
+      />
+      <Route path="/profile" element={<>here is my profile</>} />
+    </Routes>
   )
 }
 
