@@ -7,26 +7,16 @@ import UserRoutes from './UserRoutes'
 function App() {
   return (
     <>
-      <IfNotAuthenticated>
+      <UserRoutes />
+
+      {/* <IfNotAuthenticated>
         <RegisterRoutes />
       </IfNotAuthenticated>
       <IfAuthenticated>
         <UserRoutes />
-      </IfAuthenticated>
+      </IfAuthenticated> */}
     </>
   )
 }
 
 export default App
-
-// return (
-//   <Logo />
-
-//   <Routes>
-//     <Route path='/' element={<Swipey/>}/>
-//     <Route path='/profile' element={<Profile/>}/>
-//     <Route path='/msg' element={<Msg/>}/>
-//   </Routes>
-//   <Nav/>
-
-// )
