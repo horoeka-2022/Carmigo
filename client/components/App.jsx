@@ -7,12 +7,14 @@ import UserRoutes from './UserRoutes'
 function App() {
   return (
     <>
-      <IfNotAuthenticated>
+      <UserRoutes />
+
+      {/* <IfNotAuthenticated>
         <RegisterRoutes />
       </IfNotAuthenticated>
       <IfAuthenticated>
         <UserRoutes />
-      </IfAuthenticated>
+      </IfAuthenticated> */}
     </>
   )
 }

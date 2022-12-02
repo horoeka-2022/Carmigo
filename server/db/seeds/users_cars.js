@@ -1,8 +1,8 @@
 exports.seed = (knex) => {
-  return knex('users')
+  return knex('user_car')
     .del()
     .then(() =>
-      knex('users').insert([
+      knex('user_car').insert([
         {
           auth0_id: 'auth0|123',
           car_name: 'boongboong',
