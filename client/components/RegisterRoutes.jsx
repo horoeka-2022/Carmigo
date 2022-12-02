@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { IfNotAuthenticated } from './Authenticated'
 import Home from './Home'
 import Nav from './Nav'
 import SignIn from './SignIn'
