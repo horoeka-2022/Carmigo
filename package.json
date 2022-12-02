@@ -40,7 +40,8 @@
     "formik": "^2.2.9",
     "jwks-rsa": "^2.0.4",
     "knex": "^1.0.1",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
