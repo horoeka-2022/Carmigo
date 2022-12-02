@@ -10,6 +10,7 @@ function UserRoutes() {
   useEffect(() => {
     getAccessTokenSilently()
       .then((token) => getUser(token))
+      //need to create getUser
       .then((userInDb) => {
         userInDb ? navigate('/') : navigate('/register')
       })
