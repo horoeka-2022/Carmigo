@@ -28,8 +28,8 @@ function UserRoutes() {
       <Logo />
       {/*DONE*/}
       <Routes>
-        <Route path="/instructions" element={<Instructions />} />
         <Route path="/" element={<SwipePage />} />
+        <Route path="/instructions" element={<Instructions />} />
         {/* SwipePage done by Richard */}
         <Route path="/register" element={<Register />} />
         <Route path="/msg" element={<MessagePage />} />
