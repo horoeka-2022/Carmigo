@@ -23,7 +23,7 @@ function UserRoutes() {
   // }, [])
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center overflow-hidden bg-blue-500">
+    <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
       <Logo />
       {/*DONE*/}
       <Routes>
@@ -35,7 +35,9 @@ function UserRoutes() {
         <Route path="/profile" element={<ProfilePage />} />
         {/*TODO: create ProfilePage component*/}
       </Routes>
-      <Footer />
+      <div className="bg-blue-200">
+        <Footer />
+      </div>
     </div>
   )
 }
