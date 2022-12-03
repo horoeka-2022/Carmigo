@@ -15,6 +15,10 @@ function SwipePage() {
       name: 'Monica Hall',
       url: '../../server/public/images/3.jpeg',
     },
+    {
+      name: 'CJ',
+      url: '../../server/public/images/4.jpg',
+    },
   ]
   const characters = db
   const [lastDirection, setLastDirection] = useState()
@@ -30,17 +34,17 @@ function SwipePage() {
 
   return (
     <>
-      <div className="w-11/12 h-5/6 justify-center items-center overflow-hidden border-2 border-solid border-red-400 ">
+      <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         {characters.map((character) => (
           <TinderCard
-            className="absolute w-full h-5/6 overflow-hidden"
+            className="flex flex-col absolute overflow-hidden"
             key={character.name}
             onSwipe={(dir) => swiped(dir, character.name)}
             onCardLeftScreen={() => outOfFrame(character.name)}
           >
             <div
               style={{ backgroundImage: 'url(' + character.url + ')' }}
-              className="relative w-11/12 h-5/6 bg-cover bg-center rounded-3xl"
+              className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
             >
               <h3>{character.name}</h3>
             </div>
