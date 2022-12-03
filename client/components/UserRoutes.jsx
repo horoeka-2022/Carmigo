@@ -7,6 +7,7 @@ import ProfilePage from './ProfilePage'
 import Register from './Register'
 import Logo from './subcomponents/Logo'
 import SwipePage from './SwipePage'
+import Instructions from './Instructions'
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
@@ -27,6 +28,7 @@ function UserRoutes() {
       <Logo />
       {/*DONE*/}
       <Routes>
+        <Route path="/instructions" element={<Instructions />} />
         <Route path="/" element={<SwipePage />} />
         {/* SwipePage done by Richard */}
         <Route path="/register" element={<Register />} />
