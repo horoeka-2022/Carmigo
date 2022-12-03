@@ -1,20 +1,17 @@
 import React from 'react'
 import { IfNotAuthenticated, IfAuthenticated } from './Authenticated'
-
-import RegisterRoutes from './RegisterRoutes'
+import HomePage from './HomePage'
 import UserRoutes from './UserRoutes'
 
 function App() {
   return (
     <>
-      <UserRoutes />
-
-      {/* <IfNotAuthenticated>
-        <RegisterRoutes />
+      <IfNotAuthenticated>
+        <HomePage />
       </IfNotAuthenticated>
       <IfAuthenticated>
         <UserRoutes />
-      </IfAuthenticated> */}
+      </IfAuthenticated>
     </>
   )
 }
