@@ -14,11 +14,13 @@ function HomePage() {
 
   function handleSignIn(e) {
     e.preventDefault()
-    loginWithRedirect()
+    loginWithRedirect({
+      redirectUri: `${window.location.origin}/swipe`,
+    })
   }
 
   function handleTrouble() {
-    alert("Sorry Can't help ya")
+    alert("Sorry Can't help ya  ")
   }
 
   return (
