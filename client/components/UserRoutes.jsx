@@ -14,15 +14,14 @@ function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
   const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   getAccessTokenSilently()
-  //     .then((token) => getUser(token))
-  //     //need to create getUser which get user data from table user_car
-  //     .then((userInDb) => {
-  //       userInDb ? navigate('/') : navigate('/register')
-  //     })
-  //     .catch((err) => console.error(err))
-  // }, [])
+  useEffect(() => {
+    getAccessTokenSilently()
+      .then((token) => getUser(token))
+      .then((userInDb) => {
+        userInDb ? navigate('/swipe') : navigate('/register')
+      })
+      .catch((err) => console.error(err))
+  }, [])
 
   return (
     <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
