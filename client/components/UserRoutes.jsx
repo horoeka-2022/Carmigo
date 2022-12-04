@@ -28,7 +28,7 @@ function UserRoutes() {
     <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
       <Logo />
       <Routes>
-        <Route path="/swipe" element={<SwipePage />} />
+        <Route path="/" element={<SwipePage />} />
         <Route path="/instructions" element={<Instructions />} />
         <Route path="/register" element={<Register />} />
         <Route path="/msg" element={<Chats />} />

@@ -19,7 +19,7 @@ function ProfilePage() {
         </div>
       </div>
       <div>
-        <div className="h-min border-4 grid grid-cols-3 justify-items-center">
+        <div className="grid grid-cols-3 justify-items-center">
           <button className="bg-blue-400 border-2 border-blue-300 text-white rounded-full decoration-solid flex justify-self-center mt-4 mb-4 gap-9 px-9 border-2 w-min">
             Settings
           </button>
