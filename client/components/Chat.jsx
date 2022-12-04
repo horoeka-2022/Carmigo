@@ -1,5 +1,5 @@
 import React from 'react'
-// import Avatar from '@material-ui/core/Avatar'
+import { Link } from 'react-router-dom'
 
 function Chat({ name, profilePic, message, timestamp }) {
   return (
@@ -9,9 +9,14 @@ function Chat({ name, profilePic, message, timestamp }) {
           className="h-30 w-20 justify-self-start rounded-full"
           src={profilePic}
         />
-        <div className="justify-self-start font-bold">
-          <h2>{name} </h2>
-        </div>
+        <Link to="/msg/:name">
+          {/* WILL NEED TO CHANGE THE ROUTE LATER */}
+          <button>
+            <div className="justify-self-start font-bold">
+              <h2>{name} </h2>
+            </div>
+          </button>
+        </Link>
         <div className="py-10 text-gray-500">
           <p>{message}</p>
         </div>
