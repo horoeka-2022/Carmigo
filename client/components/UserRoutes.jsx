@@ -26,7 +26,6 @@ function UserRoutes() {
   return (
     <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
       <Logo />
-      {/*DONE*/}
       <Routes>
         <Route path="/" element={<SwipePage />} />
         <Route path="/instructions" element={<Instructions />} />
