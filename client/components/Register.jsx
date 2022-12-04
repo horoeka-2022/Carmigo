@@ -1,8 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { getUser, updateUser } from '../api'
 
 function Register() {
-  function handleClick() {}
+  const { getAccessTokenSilently } = useAuth0()
+  const [firstName, setFirstName] = useState('')
+  const navigate = useNavigate()
+
+  function handleClick() {
+    getAccessTokenSilently()
+      .then((token) => updateUser({ firstName }, token))
+      .then(navigate('/addphotos'))
+      .catch((err) => console.error(err))
+  }
+
+  function handleChange(e) {
+    setFirstName(e.target.value)
+  }
+
+  useEffect(() => {
+    getAccessTokenSilently()
+      .then((token) => getUser(token))
+      .then((userInDb) => {
+        userInDb.firstName ? navigate('/addphotos') : navigate('/register')
+      })
+      .catch((err) => console.error(err))
+  }, [])
 
   return (
     <div className="flex flex-col h-[50vh] justify-between items-center text-center">
@@ -11,17 +35,18 @@ function Register() {
         <input
           className="w-[60vw] mt-5 bg-blue-200 border-solid border-black border-b-2 px-4 text-2xl"
           placeholder="eg. Ahmad"
+          value={firstName}
+          onChange={(e) => handleChange(e)}
         />
         <div className="mt-2">This is how it will appear in CarMigo</div>
       </div>
       <div className="my-6 w-[80vw]">
-        <Link
-          to="/addphotos"
+        <button
           onClick={handleClick}
           className="border-solid border-2 px-20 py-2 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400 "
         >
           CONTINUE
-        </Link>
+        </button>
       </div>
     </div>
   )
