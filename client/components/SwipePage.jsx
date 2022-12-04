@@ -35,7 +35,6 @@ function SwipePage() {
 
   return (
     <>
-      <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         {characters.map((character) => (
           <TinderCard
             className="flex flex-col absolute overflow-hidden"
@@ -51,7 +50,6 @@ function SwipePage() {
             </div>
           </TinderCard>
         ))}
-      </div>
       {/* {lastDirection ? (
         <h2 className="infoText">You swiped {lastDirection}</h2>
       ) : (
