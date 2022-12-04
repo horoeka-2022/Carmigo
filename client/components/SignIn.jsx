@@ -7,21 +7,14 @@ import { IfAuthenticated, IfNotAuthenticated } from './Authenticated'
 function Nav() {
   const { logout, loginWithRedirect, user, isLoading } = useAuth0()
 
-  function handleLogoff(e) {
-    e.preventDefault()
-    logout({ returnTo: `${window.location.origin}/signin` })
-  }
-
-  function handleRegister(e) {
-    e.preventDefault()
+  function handleRegister() {
     loginWithRedirect({
       redirectUri: `${window.location.origin}/profile`,
     })
   }
 
-  function handleSignIn(e) {
-    e.preventDefault()
-    loginWithRedirect()
+  function handleLogoff() {
+    logout()
   }
 
   return (
@@ -34,7 +27,6 @@ function Nav() {
         <nav className="flex flex-col justify-end  gap-4 mb-8">
           <IfAuthenticated>
             <Link
-              to="/"
               onClick={handleLogoff}
               className="border-solid border-2 px-8 py-2 border-white rounded-3xl hover:bg-zinc-600 absolute top-0 right-0"
             >

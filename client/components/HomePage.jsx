@@ -14,7 +14,9 @@ function HomePage() {
 
   function handleSignIn(e) {
     e.preventDefault()
-    loginWithRedirect()
+    loginWithRedirect({
+      redirectUri: `${window.location.origin}/swipe`,
+    })
   }
 
   function handleTrouble() {
