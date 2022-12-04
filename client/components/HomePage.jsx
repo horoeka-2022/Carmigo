@@ -8,7 +8,7 @@ function HomePage() {
   function handleRegister(e) {
     e.preventDefault()
     loginWithRedirect({
-      redirectUri: `${window.location.origin}/`,
+      redirectUri: `${window.location.origin}/swipe`,
     })
   }
 

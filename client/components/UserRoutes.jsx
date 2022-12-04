@@ -2,17 +2,12 @@ import { useAuth0 } from '@auth0/auth0-react'
 import React, { useEffect } from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import Footer from './Footer'
-import MessagePage from './MessagePage'
 import ProfilePage from './ProfilePage'
 import Register from './Register'
 import Logo from './subcomponents/Logo'
 import SwipePage from './SwipePage'
 import Instructions from './Instructions'
-<<<<<<< HEAD
 import Chats from './Chats'
-=======
-import SignIn from './SignIn'
->>>>>>> be7f39cacd90f21b7addf23812cd8f2dc151e269
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
@@ -32,7 +27,6 @@ function UserRoutes() {
     <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
       <Logo />
       <Routes>
-        <Route path="/" element={<SignIn />} />
         <Route path="/swipe" element={<SwipePage />} />
         <Route path="/instructions" element={<Instructions />} />
         <Route path="/register" element={<Register />} />
