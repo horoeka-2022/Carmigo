@@ -5,7 +5,7 @@ function Register() {
   function handleClick() {}
 
   return (
-    <div className="flex flex-col h-[50vh] justify-between items-center mx-10">
+    <div className="flex flex-col h-[50vh] justify-between items-center text-center">
       <div className="font-bold text-6xl ">My first name is</div>
       <div className="w-[80vw] py-2">
         <input
