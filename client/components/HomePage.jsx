@@ -20,7 +20,7 @@ function HomePage() {
   }
 
   function handleTrouble() {
-    alert("Sorry Can't help ya")
+    alert("Sorry Can't help ya  ")
   }
 
   return (
