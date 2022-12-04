@@ -4,4 +4,3 @@ bundle.*
 *.sqlite3
 .env
 server/public/output.css
-.env
