@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className="flex w-screen h-[7vh] my-2 flex-row justify-center items-center">
         <div className="flex w-screen justify-around items-center">
-          <Link to="/swipe">
+          <Link to="/">
             <i className="text-5xl">
               <IoCarSportSharp />
             </i>

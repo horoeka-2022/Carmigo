@@ -8,7 +8,7 @@ function HomePage() {
   function handleRegister(e) {
     e.preventDefault()
     loginWithRedirect({
-      redirectUri: `${window.location.origin}/swipe`,
+      redirectUri: `${window.location.origin}/register`,
     })
   }
 
@@ -38,7 +38,7 @@ function HomePage() {
             Create Account
           </Link>
           <Link
-            to="/"
+            to="/instructions"
             onClick={handleSignIn}
             className="border-solid border-2 px-20 py-2 border-white rounded-3xl text-center text-xl underline hover:bg-zinc-600"
           >
