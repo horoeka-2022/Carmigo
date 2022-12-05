@@ -34,7 +34,7 @@ function UserRoutes() {
   }, [])
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-200">
+    <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-300">
       <Logo />
       <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         <Routes>

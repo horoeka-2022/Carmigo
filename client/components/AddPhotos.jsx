@@ -1,11 +1,7 @@
-import { useAuth0 } from '@auth0/auth0-react'
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function AddPhotos() {
-
-
-
   return (
     <>
       <div className="flex flex-col justify-center items-center">
@@ -26,7 +22,7 @@ function AddPhotos() {
           </div>
           <div className="h-36 bg-blue-200"></div>
         </div>
-        <Link to="/instructions">
+        <Link to="/tutorial">
           <button className="border-solid border-2 px-2 py-2 my-5 border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  ">
             Continue to Instructions
           </button>
