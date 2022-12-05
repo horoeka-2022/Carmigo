@@ -9,7 +9,7 @@ function Chat({ name, profilePic, message, timestamp }) {
           className="h-15 w-10 justify-self-start rounded-full"
           src={profilePic}
         />
-        <Link to={`/msg/${name}`}>
+        <Link to={`/chats/${name}`}>
           {/* WILL NEED TO CHANGE THE ROUTE LATER */}
           <button>
             <div className="justify-self-start font-bold">

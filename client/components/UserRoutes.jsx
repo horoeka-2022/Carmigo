@@ -20,11 +20,11 @@ function UserRoutes() {
     getAccessTokenSilently()
       .then((token) => getUser(token))
       .then((userInDb) => {
-        if (userInDb.user_metadata.tutorialCompleted) {
+        if (userInDb?.user_metadata?.tutorialCompleted) {
           navigate('/swipe')
-        } else if (userInDb.user_metadata.addedPhotos) {
+        } else if (userInDb?.user_metadata?.addedPhotos) {
           navigate('/tutorial')
-        } else if (userInDb.user_metadata.firstName != '') {
+        } else if (userInDb?.user_metadata?.firstName) {
           navigate('/addphotos')
         } else {
           navigate('/register')
