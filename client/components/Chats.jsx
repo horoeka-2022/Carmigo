@@ -4,7 +4,7 @@ import Chat from './Chat'
 function Chats() {
   return (
     <>
-      <div className="chats">
+      <div className="h-full overflow-auto">
         <Chat
           name="George"
           message="Nice "

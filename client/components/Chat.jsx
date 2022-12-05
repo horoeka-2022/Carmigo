@@ -3,10 +3,10 @@ import React from 'react'
 
 function Chat({ name, profilePic, message, timestamp }) {
   return (
-    <div className="flex w-screen h-40 border flex-row justify-center items-center bg-white">
+    <div className="flex w-screen h-[10vh] border flex-row justify-center items-center bg-white">
       <div className="flex w-screen justify-around items-center">
         <img
-          className="h-30 w-20 justify-self-start rounded-full"
+          className="h-15 w-10 justify-self-start rounded-full"
           src={profilePic}
         />
         <div className="justify-self-start font-bold">

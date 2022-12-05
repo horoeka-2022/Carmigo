@@ -10,7 +10,7 @@ function Register() {
       <div className="w-[80vw] py-2">
         <input
           className="w-[60vw] mt-5 bg-blue-200 border-solid border-black border-b-2 px-4 text-2xl"
-          placeholder="eg. Ahmad"
+          placeholder="eg. John Cena"
         />
         <div className="mt-2">This is how it will appear in CarMigo</div>
       </div>

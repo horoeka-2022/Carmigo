@@ -5,20 +5,32 @@ function SwipePage() {
   console.log('swipe here')
   const db = [
     {
-      name: 'Richard Hendricks',
-      url: '../../server/public/images/1.jpeg',
+      name: 'Krys',
+      url: '../../server/public/images/krys.jpg',
     },
     {
-      name: 'Erlich Bachman',
-      url: '../../server/public/images/2.jpeg',
+      name: 'Clem',
+      url: '../../server/public/images/clem.jpg',
     },
     {
-      name: 'Monica Hall',
-      url: '../../server/public/images/3.jpeg',
+      name: 'Johnny',
+      url: '../../server/public/images/johnny.jpg',
     },
     {
-      name: 'CJ',
-      url: '../../server/public/images/4.jpg',
+      name: 'Helana',
+      url: '../../server/public/images/helana.jpg',
+    },
+    {
+      name: 'Jared',
+      url: '../../server/public/images/jared.jpg',
+    },
+    {
+      name: 'Tate',
+      url: '../../server/public/images/gg.jpg',
+    },
+    {
+      name: 'Paul',
+      url: '../../server/public/images/paul.jpg',
     },
   ]
   const characters = db
@@ -35,23 +47,21 @@ function SwipePage() {
 
   return (
     <>
-      <div className="flex h-[78vh] justify-center items-center overflow-hidden">
-        {characters.map((character) => (
-          <TinderCard
-            className="flex flex-col absolute overflow-hidden"
-            key={character.name}
-            onSwipe={(dir) => swiped(dir, character.name)}
-            onCardLeftScreen={() => outOfFrame(character.name)}
+      {characters.map((character) => (
+        <TinderCard
+          className="flex flex-col absolute overflow-hidden"
+          key={character.name}
+          onSwipe={(dir) => swiped(dir, character.name)}
+          onCardLeftScreen={() => outOfFrame(character.name)}
+        >
+          <div
+            style={{ backgroundImage: 'url(' + character.url + ')' }}
+            className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
           >
-            <div
-              style={{ backgroundImage: 'url(' + character.url + ')' }}
-              className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
-            >
-              <h3>{character.name}</h3>
-            </div>
-          </TinderCard>
-        ))}
-      </div>
+            <h3>{character.name}</h3>
+          </div>
+        </TinderCard>
+      ))}
       {/* {lastDirection ? (
         <h2 className="infoText">You swiped {lastDirection}</h2>
       ) : (
