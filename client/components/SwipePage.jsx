@@ -4,20 +4,32 @@ import TinderCard from 'react-tinder-card'
 function SwipePage() {
   const db = [
     {
-      name: 'Richard Hendricks',
-      url: '../../server/public/images/1.jpeg',
+      name: 'Krys',
+      url: '../../server/public/images/krys.jpg',
     },
     {
-      name: 'Erlich Bachman',
-      url: '../../server/public/images/2.jpeg',
+      name: 'Clem',
+      url: '../../server/public/images/clem.jpg',
     },
     {
-      name: 'Monica Hall',
-      url: '../../server/public/images/3.jpeg',
+      name: 'Johnny',
+      url: '../../server/public/images/johnny.jpg',
     },
     {
-      name: 'CJ',
-      url: '../../server/public/images/4.jpg',
+      name: 'Helana',
+      url: '../../server/public/images/helana.jpg',
+    },
+    {
+      name: 'Jared',
+      url: '../../server/public/images/jared.jpg',
+    },
+    {
+      name: 'Tate',
+      url: '../../server/public/images/gg.jpg',
+    },
+    {
+      name: 'Paul',
+      url: '../../server/public/images/paul.jpg',
     },
   ]
   const characters = db

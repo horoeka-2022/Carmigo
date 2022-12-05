@@ -8,24 +8,30 @@ function HomePage() {
   function handleRegister(e) {
     e.preventDefault()
     loginWithRedirect({
-      redirectUri: `${window.location.origin}/`,
+      redirectUri: `${window.location.origin}/register`,
     })
   }
 
   function handleSignIn(e) {
     e.preventDefault()
-    loginWithRedirect()
+    loginWithRedirect({
+      redirectUri: `${window.location.origin}/swipe`,
+    })
   }
 
   function handleTrouble() {
-    alert("Sorry Can't help ya")
+    alert("Sorry Can't help ya  ")
   }
 
   return (
     <>
       <section className="h-screen w-screen flex flex-col bg-blue-500 text-white items-center">
         <div className="flex flex-col h-full w-full justify-center items-center">
-          <img className="h-25 w-72 justify-center" src="logo.png" alt="logo" />
+          <img
+            className="h-25 w-72 justify-center"
+            src="../../logo.png"
+            alt="logo"
+          />
         </div>
         <nav className="flex flex-col justify-end  gap-4 mb-8">
           <Link
@@ -36,7 +42,7 @@ function HomePage() {
             Create Account
           </Link>
           <Link
-            to="/"
+            to="/instructions"
             onClick={handleSignIn}
             className="border-solid border-2 px-20 py-2 border-white rounded-3xl text-center text-xl underline hover:bg-zinc-600"
           >
