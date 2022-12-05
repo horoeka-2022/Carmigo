@@ -48,13 +48,13 @@ function ChatScreen() {
                 alt="from"
                 src={message.image}
               />
-              <div className="bg-slate-200 p-2 rounded-full">
+              <div className="bg-slate-200 p-2 rounded-xl break-words text-clip overflow-hidden">
                 <p>{message.message}</p>
               </div>
             </div>
           ) : (
             <div className="flex flex-row justify-end items-center my-1">
-              <div className="bg-yellow-200 p-2 rounded-full">
+              <div className="bg-yellow-200 p-2 rounded-xl break-words text-clip overflow-hidden">
                 <p>{message.message}</p>
               </div>
               <img

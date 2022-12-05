@@ -7,7 +7,7 @@ function Chat({ name, profilePic, message, timestamp }) {
       <Link to={`/chats/${name}`}>
         <div className="flex w-screen justify-around items-center">
           <img
-            className="h-15 w-10 justify-self-start rounded-full"
+            className="h-[9vh] w-[7vh] rounded-2xl bg-center m-2"
             src={profilePic}
           />
 
