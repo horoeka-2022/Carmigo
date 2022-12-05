@@ -6,10 +6,10 @@ import ProfilePage from './ProfilePage'
 import Register from './Register'
 import Logo from './subcomponents/Logo'
 import SwipePage from './SwipePage'
-import Instructions from './Instructions'
 import Chats from './Chats'
 import AddPhotos from './AddPhotos'
 import { getUser } from '../api'
+import Tutorial from './Tutorial'
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
@@ -19,11 +19,15 @@ function UserRoutes() {
     getAccessTokenSilently()
       .then((token) => getUser(token))
       .then((userInDb) => {
-        userInDb.tutorialCompleted
-          ? navigate('/swipe')
-          : userInDb.firstName
-          ? navigate('/register')
-          : navigate('/addphotos')
+        if (userInDb.user_metadata.tutorialCompleted) {
+          navigate('/swipe')
+        } else if (userInDb.user_metadata.addedPhotos) {
+          navigate('/tutorial')
+        } else if (userInDb.user_metadata.firstName != '') {
+          navigate('/addphotos')
+        } else {
+          navigate('/register')
+        }
       })
       .catch((err) => console.error(err))
   }, [])
@@ -34,7 +38,7 @@ function UserRoutes() {
       <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         <Routes>
           <Route path="/swipe" element={<SwipePage />} />
-          <Route path="/instructions" element={<Instructions />} />
+          <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/register" element={<Register />} />
           <Route path="/chats" element={<Chats />} />
           {/*TODO: create MessagePage component*/}

@@ -12,7 +12,7 @@ function Footer() {
               <IoCarSportSharp />
             </i>
           </Link>
-          <Link to="/msg">
+          <Link to="/chats">
             <i className="text-5xl">
               <TiMessages />
             </i>

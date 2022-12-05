@@ -1,7 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function AddPhotos() {
+
+
+
   return (
     <>
       <div className="snap-x text-black text-xl ...">

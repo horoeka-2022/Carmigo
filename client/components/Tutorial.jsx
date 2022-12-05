@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Instructions() {
+function Tutorial() {
   return (
     <>
       <div className="snap-x ...">
@@ -9,6 +9,7 @@ function Instructions() {
           <img
             className="object-contain h-36 w-36 justify-center"
             src="logo3.png"
+            alt="logo"
           />
         </div>
       </div>
@@ -30,4 +31,4 @@ function Instructions() {
   )
 }
 
-export default Instructions
+export default Tutorial
