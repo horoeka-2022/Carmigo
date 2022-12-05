@@ -36,19 +36,6 @@ function UserRoutes() {
   return (
     <div className="w-screen h-screen flex flex-col justify-between items-center overflow-hidden bg-blue-300">
       <Logo />
-<<<<<<< HEAD
-      {/*DONE*/}
-      <div className="flex h-[78vh] justify-center items-center overflow-hidden">
-        <Routes>
-          <Route path="/" element={<SwipePage />} />
-          <Route path="/instructions" element={<Instructions />} />
-          {/* SwipePage done by Richard */}
-          <Route path="/register" element={<Register />} />
-          <Route path="/msg" element={<MessagePage />} />
-          {/*TODO: create MessagePage component*/}
-          <Route path="/profile" element={<ProfilePage />} />
-          {/*TODO: create ProfilePage component*/}
-=======
       <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         <Routes>
           <Route path="/swipe" element={<SwipePage />} />
@@ -59,7 +46,6 @@ function UserRoutes() {
           {/*TODO: create MessagePage component*/}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/addphotos" element={<AddPhotos />} />
->>>>>>> 3dd1ce54cdcf9594f5c7c98297eb3d623b68e7cd
         </Routes>
       </div>
       <div className="bg-blue-200">
