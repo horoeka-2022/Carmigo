@@ -9,8 +9,8 @@ function SwipePage() {
       url: '../../server/public/images/krys.jpg',
     },
     {
-      name: 'Clem',
-      url: '../../server/public/images/clem.jpg',
+      name: 'Drake',
+      url: '../../server/public/images/drake.jpg',
     },
     {
       name: 'Johnny',
@@ -21,12 +21,20 @@ function SwipePage() {
       url: '../../server/public/images/helana.jpg',
     },
     {
+      name: 'Pop',
+      url: '../../server/public/images/pop.jpg',
+    },
+    {
       name: 'Jared',
       url: '../../server/public/images/jared.jpg',
     },
     {
       name: 'Tate',
-      url: '../../server/public/images/gg.jpg',
+      url: '../../server/public/images/ggs.jpg',
+    },
+    {
+      name: 'Clem',
+      url: '../../server/public/images/clem.jpg',
     },
     {
       name: 'Paul',
