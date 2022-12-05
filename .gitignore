@@ -5,3 +5,4 @@ bundle.*
 .env
 server/public/output.css
 .env
+.DS_Store

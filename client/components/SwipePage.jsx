@@ -34,23 +34,21 @@ function SwipePage() {
 
   return (
     <>
-      <div className="flex h-[78vh] justify-center items-center overflow-hidden">
-        {characters.map((character) => (
-          <TinderCard
-            className="flex flex-col absolute overflow-hidden"
-            key={character.name}
-            onSwipe={(dir) => swiped(dir, character.name)}
-            onCardLeftScreen={() => outOfFrame(character.name)}
+      {characters.map((character) => (
+        <TinderCard
+          className="flex flex-col absolute overflow-hidden"
+          key={character.name}
+          onSwipe={(dir) => swiped(dir, character.name)}
+          onCardLeftScreen={() => outOfFrame(character.name)}
+        >
+          <div
+            style={{ backgroundImage: 'url(' + character.url + ')' }}
+            className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
           >
-            <div
-              style={{ backgroundImage: 'url(' + character.url + ')' }}
-              className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
-            >
-              <h3>{character.name}</h3>
-            </div>
-          </TinderCard>
-        ))}
-      </div>
+            <h3>{character.name}</h3>
+          </div>
+        </TinderCard>
+      ))}
       {/* {lastDirection ? (
         <h2 className="infoText">You swiped {lastDirection}</h2>
       ) : (
