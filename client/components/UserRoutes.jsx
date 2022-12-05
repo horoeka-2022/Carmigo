@@ -7,13 +7,10 @@ import Register from './Register'
 import Logo from './subcomponents/Logo'
 import SwipePage from './SwipePage'
 import Chats from './Chats'
-<<<<<<< HEAD
 import AddPhotos from './AddPhotos'
 import { getUser } from '../api'
 import Tutorial from './Tutorial'
-=======
 import ChatScreen from './ChatScreen'
->>>>>>> ae46969d65d997a6744a79c5bdccaf7c41ec3c1c
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
