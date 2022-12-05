@@ -19,9 +19,9 @@ router.get('/', checkJwt, (req, res) => {
 
 router.post('/', checkJwt, (req, res) => {
   const auth0_id = req.user?.sub
-  const { color } = req.body
+  const { firstName } = req.body
   const userDetails = {
-    color,
+    firstName,
   }
 
   updateUser(auth0_id, userDetails).then((metadata) => {

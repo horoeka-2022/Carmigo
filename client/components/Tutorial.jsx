@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Instructions() {
+function Tutorial() {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
@@ -32,4 +32,4 @@ function Instructions() {
   )
 }
 
-export default Instructions
+export default Tutorial

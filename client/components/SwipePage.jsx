@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import TinderCard from 'react-tinder-card'
 
 function SwipePage() {
-  console.log('swipe here')
   const db = [
     {
       name: 'Krys',
