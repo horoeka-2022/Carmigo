@@ -13,8 +13,7 @@ function ChatScreen() {
       name: 'George',
       image:
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-      message:
-        'I really like BMWs, I grew up with a family that owned only BMWs',
+      message: 'Mine is in the garage at the moment',
     },
     {
       name: 'Frances',
@@ -42,13 +41,13 @@ function ChatScreen() {
     <>
       <div className=" w-screen bg-white h-screen p-10 justify-center">
         <div className="text-gray-400 text-center">
-          <h2>YOU MATCHED WITH GEORGE ON 05/12/22</h2>
+          <h2>YOU MATCHED WITH {messages.name} ON 05/12/22</h2>
         </div>
         <div>
           {messages.map((message) =>
-            message.name === 'Frances' ? (
+            message.name !== 'Frances' ? (
               <div className="flex py-5 justify-self-end">
-                <div className="p-12 bg-blue-400 rounded-3xl">
+                <div className="p-12 bg-gray-200 rounded-3xl">
                   <p>{message.message}</p>
                 </div>
                 <img
@@ -62,7 +61,7 @@ function ChatScreen() {
                   className="h-30 w-20 justify-self-start rounded-full mr-3"
                   src={message.image}
                 />
-                <div className="p-12 bg-gray-200 rounded-3xl">
+                <div className="p-12 bg-blue-400 rounded-3xl">
                   <p>{message.message}</p>
                 </div>
               </div>

@@ -10,7 +10,6 @@ import SwipePage from './SwipePage'
 import Instructions from './Instructions'
 import Chats from './Chats'
 import ChatScreen from './ChatScreen'
-// import Chat from './Chat'
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
