@@ -45,7 +45,11 @@ function ProfilePage() {
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-center items-center w-20 h-20 bg-slate-100 hover:bg-blue-200 text-5xl hover:scale-105 rounded-full">
-            <Link to="/settings" className="justify-center items-center">
+            <Link
+              to="/"
+              className="justify-center items-center"
+              onClick={handleLogoff}
+            >
               <i className="justify-center items-center text-5xl text-gray-400">
                 <MdLogout className="hover:scale-125" />
               </i>
@@ -66,7 +70,6 @@ function ProfilePage() {
         </button>
       </div>
     </div>
-    
   )
 }
 
