@@ -1,15 +1,12 @@
 const path = require('path')
 const express = require('express')
 // const cors = require('cors')
-const fruitRoutes = require('./routes/fruits')
 const userRoutes = require('./routes/users')
 const server = express()
 
 // server.use(cors())
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
-
-server.use('/api/v1/fruits', fruitRoutes)
 server.use('/api/v1/users', userRoutes)
 
 server.get('*', (req, res) => {

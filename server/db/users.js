@@ -18,6 +18,6 @@ function getUser(id, db = connection) {
   return db('users').select('username', 'icon').where('auth0_id', id).first()
 }
 
-function createUser(user, db = connection) {
-  return db('users').insert(user)
+function createUser(auth0_id, firstName, db = connection) {
+  return db('users').insert({ auth0_id: auth0_id, first_name: firstName })
 }

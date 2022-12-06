@@ -11,6 +11,10 @@ const socketEvents = (io, socket) => {
   socket.on('disconnect', () => {
     console.log(`socket.io - socket.id \`${socket.id}\` disconnected`)
   })
+
+  socket.on('chat message', (msg) => {
+    console.log('message: ' + msg)
+  })
 }
 
 const vitePluginSocketIO = (options = {}) => ({
