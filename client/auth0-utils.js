@@ -1,7 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import { useDispatch } from 'react-redux'
 
-import { updateLoggedInUser } from './slices/user'
+// import { updateLoggedInUser } from './slices/user' do NOT uncomment - tests will not work
 
 // eslint-disable-next-line no-unused-vars
 export async function useCacheUser() {
@@ -22,4 +22,8 @@ export async function useCacheUser() {
       console.error(err)
     }
   }
+}
+
+export function getIsAuthenticated(useAuth0) {
+  return useAuth0().isAuthenticated
 }
