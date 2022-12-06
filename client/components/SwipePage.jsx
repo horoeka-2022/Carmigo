@@ -23,6 +23,7 @@ function SwipePage() {
     {
       name: 'Krys',
       url: '../../server/public/images/krys.jpg',
+      details: 'I love Holdens!',
     },
     {
       name: 'Gtr',
@@ -44,6 +45,7 @@ function SwipePage() {
     {
       name: 'Johnny',
       url: '../../server/public/images/johnny.jpg',
+      details: 'Nissans are the coolest!',
     },
 
     {
@@ -53,6 +55,7 @@ function SwipePage() {
     {
       name: 'Jared',
       url: '../../server/public/images/jared.jpg',
+      details: 'Toyotas are the best!',
     },
     {
       name: 'Tate',
@@ -69,6 +72,7 @@ function SwipePage() {
     {
       name: 'Paul',
       url: '../../server/public/images/paul.jpg',
+      details: 'When you drive, make sure you do it in style.',
     },
   ]
   const characters = db
@@ -96,7 +100,15 @@ function SwipePage() {
             style={{ backgroundImage: 'url(' + character.url + ')' }}
             className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
           >
-            <h3>{character.name}</h3>
+            <div
+              className="flex-auto text-left mt-96 ml-5 pt-40 text-white
+              text-3xl text-left mt-96 ml-5"
+            >
+              <h4 className="flex-auto text-white font-extrabold text-5xl ">
+                {character.name}
+              </h4>
+              <p>{character.details}</p>
+            </div>
           </div>
         </TinderCard>
       ))}

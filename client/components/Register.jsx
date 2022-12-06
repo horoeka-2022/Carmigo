@@ -1,7 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { getUser, updateUser } from '../api'
+import { getUser, createUser } from '../api'
 
 function Register() {
   const { getAccessTokenSilently } = useAuth0()
@@ -9,10 +9,14 @@ function Register() {
   const navigate = useNavigate()
 
   function handleClick() {
-    getAccessTokenSilently()
-      .then((token) => updateUser({ firstName }, token))
-      .then(navigate('/addphotos'))
-      .catch((err) => console.error(err))
+    if (firstName != '') {
+      getAccessTokenSilently()
+        .then((token) => createUser({ firstName }, token))
+        .then(navigate('/addphotos'))
+        .catch((err) => console.error(err))
+    } else {
+      alert('Please fill in your detail')
+    }
   }
 
   function handleChange(e) {

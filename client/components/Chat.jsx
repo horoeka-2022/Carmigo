@@ -9,6 +9,7 @@ function Chat({ name, profilePic, message, timestamp }) {
           <img
             className="h-[9vh] w-[7vh] rounded-2xl bg-center m-2"
             src={profilePic}
+            alt="profile_photo"
           />
 
           {/* WILL NEED TO CHANGE THE ROUTE LATER */}
