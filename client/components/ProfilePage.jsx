@@ -11,41 +11,49 @@ function ProfilePage() {
   }
   return (
     <>
-      <div className="flex flex-col justify-center items-center mt-20">
-        <div>
-          <div className="grid grid-rows-1 justify-items-center">
-            <img
-              className="justify-self-auto w-42 h-36 shrink-0 grow-0 mt-20 scale-125 mb-12"
-              src="https://www.koimoi.com/wp-content/new-galleries/2022/08/john-cena-feels-hes-too-old-to-become-wwe-champion-for-17th-time-001.jpg"
-            ></img>
-            <button className="bg-blue-400 border-2 border-blue-300 text-white rounded-full decoration-solid flex justify-self-center mt-4 mb-4 gap-9 px-9 border-2 w-min">
-              <i className="text-2xl">
-                <MdSettings />
-              </i>
-              Settings
-            </button>
-            <button className="bg-blue-400 border-2 border-blue-300 text-white rounded-full decoration-solid flex justify-self-center mt-4 mb-4 gap-9 px-9 border-2 w-min">
-              <i className="text-2xl">
-                <FaEdit />
-              </i>
-              <h3 className="whitespace-nowrap">Edit Profile</h3>
-            </button>
-            <Link to="/" onClick={handleLogoff}>
-              <button className="bg-blue-400 border-2 border-blue-300 text-white rounded-full decoration-solid flex justify-self-center mt-4 mb-4 gap-9 px-9 border-2 w-min">
-                <i className="text-2xl">
-                  <BiLogOut />
+      <div className="flex w-screen my-2 justify-center mt-20 p-20 bg-blue-300">
+        <div className="justify-center">
+          <img
+            className="justify-self-center w-42 h-36 shrink-0 grow-0 mt-20 scale-125 mb-12"
+            src="https://www.koimoi.com/wp-content/new-galleries/2022/08/john-cena-feels-hes-too-old-to-become-wwe-champion-for-17th-time-001.jpg"
+          />
+          <div className="flex flex-row justify-between">
+            <div className="justify-self-start bg-white settings hover:bg-blue-200 text-5xl hover:scale-105 rounded-full w-20 h-20 p-4">
+              <Link to="/settings">
+                <i className="b">
+                  <MdSettings className="hover:scale-125" />
+                  <p className="font-bold text-sm mt-5">Settings</p>
                 </i>
-                <h3 className="whitespace-nowrap">Sign Out</h3>
-              </button>
-            </Link>
-            <div className=" text-lg mt-16">Get CarMigo Gold</div>
-            <div className="mt-6 text-sm">See who Likes your car & more!</div>
-            <button className="border-solid border-2 px-12 py-1 my-5 border-white rounded-3xl text-center text-l bg-gradient-to-r from-sky-400 to-indigo-400">
+              </Link>
+            </div>
+            <div className="mt-14 justify-self-center bg-white settings hover:bg-blue-200 hover:scale-105 text-5xl rounded-full w-20 h-20 p-4 pl-5">
+              <Link to="/editprofile">
+                <i className="justify-self-center edit profile text-5xl">
+                  <FaEdit className="hover:scale-125" />
+                  <p className="font-bold text-sm mt-5">Edit Profile</p>
+                </i>
+              </Link>
+            </div>
+            <div className="justify-self-end bg-white settings  hover:bg-blue-200 hover:scale-105 text-5xl rounded-full w-20 h-20 p-4 pr-5">
+              <Link to="/" onClick={handleLogoff}>
+                <i className="justify-self-end edit profile text-5xl">
+                  <BiLogOut className="hover:scale-125" />
+                  <p className="font-bold text-sm mt-5">Log Out</p>
+                </i>
+              </Link>
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-xl font-bold mt-16 text-center">
+              Get CarMigo Gold
+            </div>
+            <div className="mt-6 text-lg">See who Likes your car and more!</div>
+            <button className="hover:scale-105 px-12 py-1 my-5 rounded-3xl text-center text-l bg-gradient-to-r from-sky-400 to-indigo-400">
               <h3 className="whitespace-nowrap">Get CarMigo Gold</h3>
             </button>
           </div>
-          <div className="h-36"></div>
         </div>
+        <div className="h-36"></div>
       </div>
     </>
   )
