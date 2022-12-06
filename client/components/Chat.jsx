@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Chat({ name, profilePic, message, timestamp }) {
   return (
-    <div className="flex w-screen h-[10vh] border flex-row justify-center items-center bg-white">
+    <div className="flex w-screen h-[10vh] flex-row items-center bg-white border hover:bg-blue-200">
       <Link to={`/chats/${name}`}>
-        <div className="flex w-screen justify-around items-center">
+        <div className="flex w-screen justify-around items-center ">
           <img
             className="h-[9vh] w-[7vh] rounded-2xl bg-center m-2"
             src={profilePic}
@@ -14,11 +14,10 @@ function Chat({ name, profilePic, message, timestamp }) {
 
           {/* WILL NEED TO CHANGE THE ROUTE LATER */}
           <button>
-            <div className="justify-self-start font-bold">
+            <div className="justify-self-start font-bold w-20 m-5 hover:scale-105">
               <h2>{name}</h2>
             </div>
           </button>
-
           <div className="py-10 text-gray-500">
             <p>{message}</p>
           </div>
