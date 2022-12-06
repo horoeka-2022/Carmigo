@@ -13,11 +13,10 @@ function Chat({ name, profilePic, message, timestamp }) {
           />
 
           {/* WILL NEED TO CHANGE THE ROUTE LATER */}
-          <button>
-            <div className="justify-self-start font-bold">
-              <h2>{name}</h2>
-            </div>
-          </button>
+
+          <div className="justify-self-start font-bold">
+            <h2>{name}</h2>
+          </div>
 
           <div className="py-10 text-gray-500">
             <p>{message}</p>
