@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiFillPlusCircle } from 'react-icons/ai'
+
 function AddPhotos() {
   return (
     <div className="flex flex-col h-full justify-center items-center">
