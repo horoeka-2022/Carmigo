@@ -12,11 +12,13 @@ function ProfilePage() {
   return (
     <>
       <div className="flex w-screen my-2 justify-center mt-20 p-20 bg-blue-300">
-        <div className="justify-center">
-          <img
-            className="justify-self-center w-42 h-36 shrink-0 grow-0 mt-20 scale-125 mb-12"
-            src="https://www.koimoi.com/wp-content/new-galleries/2022/08/john-cena-feels-hes-too-old-to-become-wwe-champion-for-17th-time-001.jpg"
-          />
+        <div>
+          <div className="snap-x">
+            <img
+              className="snap-center mt-20 scale-125 mb-12 rounded-full"
+              src="https://media-exp1.licdn.com/dms/image/C4E03AQGKRhR1FSrHXw/profile-displayphoto-shrink_800_800/0/1583271038766?e=2147483647&v=beta&t=q_AISORGqN9fK6wGhQSbpxHDjxUeUk3B5zbNRM6UOdU"
+            />
+          </div>
           <div className="flex flex-row justify-between">
             <div className="justify-self-start bg-white settings hover:bg-blue-200 text-5xl hover:scale-105 rounded-full w-20 h-20 p-4">
               <Link to="/settings">
