@@ -2,7 +2,12 @@ const server = require('./server')
 const { createServer } = require('http')
 const app = createServer(server)
 const { Server } = require('socket.io')
-const io = new Server(app)
+const io = new Server(app, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+  },
+})
 
 const port = process.env.PORT || 3001
 
