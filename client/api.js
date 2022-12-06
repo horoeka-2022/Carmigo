@@ -9,7 +9,7 @@ export function createUser(user, token) {
 
 export function updateUser(user, token) {
   return request
-    .post('/api/v1/users')
+    .post('/api/v1/users/update')
     .set('authorization', `Bearer ${token}`)
     .send(user)
 }

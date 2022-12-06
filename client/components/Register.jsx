@@ -23,15 +23,6 @@ function Register() {
     setFirstName(e.target.value)
   }
 
-  useEffect(() => {
-    getAccessTokenSilently()
-      .then((token) => getUser(token))
-      .then((userInDb) => {
-        userInDb.firstName ? navigate('/addphotos') : navigate('/register')
-      })
-      .catch((err) => console.error(err))
-  }, [])
-
   return (
     <div className="flex flex-col h-[50vh] justify-between items-center text-center">
       <div className="font-bold text-6xl ">My first name is</div>

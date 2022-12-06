@@ -2,6 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import React, { useEffect, useState } from 'react'
 import { AiFillPlusCircle } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
+import { getUser, updateUser } from '../api'
 
 function AddPhotos() {
   const { getAccessTokenSilently } = useAuth0()
@@ -12,14 +13,17 @@ function AddPhotos() {
     setCarDescription(e.target.value)
   }
 
-  // useEffect(() => {
-  //   getAccessTokenSilently()
-  //     .then((token) => getUser(token))
-  //     .then((userInDb) => {
-  //       userInDb.firstName ? navigate('/addphotos') : navigate('/register')
-  //     })
-  //     .catch((err) => console.error(err))
-  // }, [])
+  function handleClick() {
+    if (carDescription != '') {
+      getAccessTokenSilently()
+        .then((token) => updateUser({ carDescription }, token))
+        .then(navigate('/tutorial'))
+        .catch((err) => console.error(err))
+    } else {
+      alert('Please fill in your detail')
+    }
+  }
+
 
   return (
     <div className="flex flex-col h-full justify-center items-center">
@@ -30,7 +34,7 @@ function AddPhotos() {
         <input
           className="w-screen mt-5 bg-blue-200 border-solid border-black border-b-2 text-center text-lg mb-5"
           placeholder="eg. Mercedes E63s AMG 660HP"
-          onChange={handleChange}
+          onChange={(e) => handleChange(e)}
           value={carDescription}
         />
         <div className="grid grid-rows-1 grid-cols-3 gap-2">
@@ -52,7 +56,10 @@ function AddPhotos() {
           </div>
         </div>
       </div>
-      <button className="border-solid mt-28 border-2 px-3 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  ">
+      <button
+        onClick={handleClick}
+        className="border-solid mt-28 border-2 px-3 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  "
+      >
         Continue to Tutorial
       </button>
     </div>
