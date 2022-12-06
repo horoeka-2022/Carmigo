@@ -1,5 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiFillPlusCircle } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
 
@@ -7,6 +7,19 @@ function AddPhotos() {
   const { getAccessTokenSilently } = useAuth0()
   const [carDescription, setCarDescription] = useState('')
   const navigate = useNavigate()
+
+  function handleChange(e) {
+    setCarDescription(e.target.value)
+  }
+
+  // useEffect(() => {
+  //   getAccessTokenSilently()
+  //     .then((token) => getUser(token))
+  //     .then((userInDb) => {
+  //       userInDb.firstName ? navigate('/addphotos') : navigate('/register')
+  //     })
+  //     .catch((err) => console.error(err))
+  // }, [])
 
   return (
     <div className="flex flex-col h-full justify-center items-center">
@@ -17,7 +30,8 @@ function AddPhotos() {
         <input
           className="w-screen mt-5 bg-blue-200 border-solid border-black border-b-2 text-center text-lg mb-5"
           placeholder="eg. Mercedes E63s AMG 660HP"
-          onChange={}
+          onChange={handleChange}
+          value={carDescription}
         />
         <div className="grid grid-rows-1 grid-cols-3 gap-2">
           <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative">
