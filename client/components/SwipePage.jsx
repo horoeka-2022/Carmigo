@@ -4,24 +4,49 @@ import TinderCard from 'react-tinder-card'
 function SwipePage() {
   const db = [
     {
+      name: 'Mini',
+      url: '../../server/public/images/women.jpg',
+    },
+
+    {
+      name: 'Baby',
+      url: '../../server/public/images/baby.jpg',
+    },
+    {
+      name: 'G63',
+      url: '../../server/public/images/g63.png',
+    },
+    {
       name: 'Krys',
       url: '../../server/public/images/krys.jpg',
       details: 'I love Holdens!',
     },
     {
-      name: 'Clem',
-      url: '../../server/public/images/clem.jpg',
-      details: 'Toyotas are the best!',
+      name: 'Gtr',
+      url: '../../server/public/images/gtr.jpg',
+    },
+    {
+      name: 'CR7',
+      url: '../../server/public/images/cr7.jpg',
+    },
+    {
+      name: 'Helana',
+      url: '../../server/public/images/helana.jpg',
+    },
+
+    {
+      name: 'Drake',
+      url: '../../server/public/images/drake.jpg',
     },
     {
       name: 'Johnny',
       url: '../../server/public/images/johnny.jpg',
       details: 'Nissans are the coolest!',
     },
+
     {
-      name: 'Helana',
-      url: '../../server/public/images/helana.jpg',
-      details: 'I love my Mitsubishi!',
+      name: 'Pop',
+      url: '../../server/public/images/pops.jpg',
     },
     {
       name: 'Jared',
@@ -30,8 +55,15 @@ function SwipePage() {
     },
     {
       name: 'Tate',
-      url: '../../server/public/images/gg.jpg',
-      details: 'Sports cars are the best! ',
+      url: '../../server/public/images/ggs.jpg',
+    },
+    {
+      name: 'Hasbulla',
+      url: '../../server/public/images/hass.jpg',
+    },
+    {
+      name: 'Clem',
+      url: '../../server/public/images/clem.jpg',
     },
     {
       name: 'Paul',

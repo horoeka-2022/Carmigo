@@ -11,6 +11,8 @@ import AddPhotos from './AddPhotos'
 import { getUser } from '../api'
 import Tutorial from './Tutorial'
 import ChatScreen from './ChatScreen'
+import Instructions from './Instructions'
+import Demo from './Demo'
 
 function UserRoutes() {
   const { getAccessTokenSilently } = useAuth0()
@@ -46,6 +48,8 @@ function UserRoutes() {
           {/*TODO: create MessagePage component*/}
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/addphotos" element={<AddPhotos />} />
+          <Route path="/instructions" element={<Instructions />} />
+          <Route path="/demo" element={<Demo />} />
         </Routes>
       </div>
       <div className="bg-blue-200">
