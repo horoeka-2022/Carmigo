@@ -4,6 +4,10 @@ import TinderCard from 'react-tinder-card'
 function SwipePage() {
   const db = [
     {
+      name: 'Super',
+      url: '../../server/public/images/super.jpg',
+    },
+    {
       name: 'Mini',
       url: '../../server/public/images/women.jpg',
     },

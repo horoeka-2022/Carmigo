@@ -20,6 +20,14 @@ function Demo() {
       name: '',
       url: '../../server/public/images/like.png',
     },
+    {
+      name: '',
+      url: '../../server/public/images/pass.png',
+    },
+    {
+      name: '',
+      url: '../../server/public/images/like.png',
+    },
   ]
   const characters = db
   const [lastDirection, setLastDirection] = useState()
