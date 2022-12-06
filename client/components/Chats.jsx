@@ -7,7 +7,7 @@ function Chats() {
       <div className="h-full overflow-auto">
         <Chat
           name="George"
-          message="Nice"
+          message="Pink Slips?"
           timestamp="43 minutes ago"
           profilePic="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
         />
@@ -25,7 +25,7 @@ function Chats() {
         />
         <Chat
           name="Jane"
-          message="Cool car!"
+          message="Line Ups ?"
           timestamp="1 week ago"
           profilePic="https://images.unsplash.com/photo-1530785602389-07594beb8b73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
         />

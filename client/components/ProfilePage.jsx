@@ -44,13 +44,11 @@ function ProfilePage() {
               <h3 className="whitespace-nowrap">Get CarMigo Gold</h3>
             </button>
           </div>
-          <div className="h-36 bg-blue-200"></div>
+          <div className="h-36"></div>
         </div>
       </div>
     </>
   )
 }
-
-// bg-blue-400 border-2 border-blue-300 text-white rounded-full decoration-solid flex justify-self-center mt-4 mb-4 gap-9 px-9 border-2 w-min
 
 export default ProfilePage

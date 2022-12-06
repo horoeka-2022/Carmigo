@@ -30,8 +30,8 @@ function AddPhotos() {
           </div>
         </div>
       </div>
-      <button className="border-solid border-2 px-2 py-2 my-5 border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  ">
-        Continue to Instructions
+      <button className="border-solid mt-28 border-2 px-3 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  ">
+        Continue to Tutorial
       </button>
     </div>
   )
