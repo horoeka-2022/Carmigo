@@ -4,17 +4,24 @@ import TinderCard from 'react-tinder-card'
 function SwipePage() {
   const db = [
     {
-      name: 'Mini',
+      name: 'Supercar Blondie',
+      url: '../../server/public/images/super.jpg',
+      details: 'RR Ghost. When you drive, make sure you do it in style.',
+    },
+    {
+      name: 'Kate',
       url: '../../server/public/images/women.jpg',
+      details: '1 of 1 collectible',
     },
-
     {
-      name: 'Baby',
+      name: 'LiL Baby',
       url: '../../server/public/images/baby.jpg',
+      details: 'Lambo Urus',
     },
     {
-      name: 'G63',
+      name: 'Nade',
       url: '../../server/public/images/g63.png',
+      details: 'G63 AMG. Love road trips.',
     },
     {
       name: 'Krys',
@@ -22,21 +29,25 @@ function SwipePage() {
       details: 'I love Holdens!',
     },
     {
-      name: 'Gtr',
+      name: 'Tanner',
       url: '../../server/public/images/gtr.jpg',
+      details: 'R35 GTR. Drive the best, or drive nothing.',
     },
     {
       name: 'CR7',
       url: '../../server/public/images/cr7.jpg',
+      details: 'SUUUUIIIIIIIII. I like stylish cars.',
     },
     {
       name: 'Helana',
       url: '../../server/public/images/helana.jpg',
+      details: 'Outlander. Driving with style',
     },
 
     {
       name: 'Drake',
       url: '../../server/public/images/drake.jpg',
+      details: "RR Ghost. It's driving time!",
     },
     {
       name: 'Johnny',
@@ -45,8 +56,9 @@ function SwipePage() {
     },
 
     {
-      name: 'Pop',
+      name: 'Pop Smoke',
       url: '../../server/public/images/pops.jpg',
+      details: 'Bentayga. No road is long with good company.',
     },
     {
       name: 'Jared',
@@ -56,19 +68,24 @@ function SwipePage() {
     {
       name: 'Tate',
       url: '../../server/public/images/ggs.jpg',
+      details: 'Ferrari 458. What colour is your Bugatti?',
     },
     {
       name: 'Hasbulla',
       url: '../../server/public/images/hass.jpg',
+      details:
+        'Lambo Gallardo. Everything in life is somewhere else, and you get there in a car.',
     },
     {
       name: 'Clem',
       url: '../../server/public/images/clem.jpg',
+      details: 'Toyota Vitz. Some days, nothing beats a really good drive.',
     },
     {
       name: 'Paul',
       url: '../../server/public/images/paul.jpg',
-      details: 'When you drive, make sure you do it in style.',
+      details:
+        'R34 GTR V-Spec. Sometimes, the best therapy is a long drive and music.',
     },
   ]
   const characters = db
@@ -97,7 +114,7 @@ function SwipePage() {
             className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
           >
             <div className="flex-auto text-left mt-96 ml-5 pt-40 text-white text-3xl">
-              <h4 className="flex-auto text-white font-extrabold text-5xl ">
+              <h4 className="flex-auto text-white font-extrabold text-4xl ">
                 {character.name}
               </h4>
               <p>{character.details}</p>
