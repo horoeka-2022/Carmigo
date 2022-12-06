@@ -10,8 +10,8 @@ function ProfilePage() {
     logout()
   }
   return (
-    <div className="flex flex-col">
-      <div>
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex justify-center items-center">
         <img
           className="justify-self-center max-h-[35vh] max-w-[35vh] rounded-full"
           src="https://www.koimoi.com/wp-content/new-galleries/2022/08/john-cena-feels-hes-too-old-to-become-wwe-champion-for-17th-time-001.jpg"
@@ -32,7 +32,7 @@ function ProfilePage() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center items-center w-20 h-20 bg-slate-100 hover:bg-blue-200 text-5xl hover:scale-105 rounded-full">
+          <div className="flex flex-col justify-center items-center w-20 h-20 bg-slate-100 hover:bg-blue-200 text-5xl hover:scale-105 rounded-full mx-5">
             <Link to="/settings" className="justify-center items-center">
               <i className="justify-center items-center text-5xl text-gray-400">
                 <MdEdit className="hover:scale-125" />

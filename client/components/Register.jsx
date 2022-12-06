@@ -25,7 +25,7 @@ function Register() {
 
   return (
     <div className="flex flex-col h-[50vh] justify-between items-center text-center">
-      <div className="font-bold text-6xl ">My first name is</div>
+      <div className="font-bold text-6xl mx-4">My first name is</div>
       <div className="w-[80vw] py-2">
         <input
           className="w-[60vw] mt-5 bg-blue-200 border-solid border-black border-b-2 px-4 text-2xl"

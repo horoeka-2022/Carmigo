@@ -8,6 +8,7 @@ function HomePage() {
   function handleRegister(e) {
     e.preventDefault()
     loginWithRedirect({
+      screen_hint: 'signup',
       redirectUri: `${window.location.origin}/register`,
     })
   }
