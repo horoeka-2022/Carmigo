@@ -38,7 +38,7 @@ function Register() {
       <div className="my-6 w-[80vw]">
         <button
           onClick={handleClick}
-          className="border-solid border-2 px-20 py-2 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400 "
+          className="hover:scale-105 border-solid border-2 px-20 py-3 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400 "
         >
           CONTINUE
         </button>

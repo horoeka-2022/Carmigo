@@ -96,10 +96,7 @@ function SwipePage() {
             style={{ backgroundImage: 'url(' + character.url + ')' }}
             className="flex relative w-screen h-[78vh] justify-center bg-cover bg-center rounded-3xl"
           >
-            <div
-              className="flex-auto text-left mt-96 ml-5 pt-40 text-white
-              text-3xl text-left mt-96 ml-5"
-            >
+            <div className="flex-auto text-left mt-96 ml-5 pt-40 text-white text-3xl">
               <h4 className="flex-auto text-white font-extrabold text-5xl ">
                 {character.name}
               </h4>
