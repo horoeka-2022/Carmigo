@@ -40,16 +40,14 @@ function UserRoutes() {
       <Logo />
       <div className="flex h-[78vh] justify-center items-center overflow-hidden">
         <Routes>
-          <Route path="/swipe" element={<SwipePage />} />
-          <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/addphotos" element={<AddPhotos />} />
+          <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/swipe" element={<SwipePage />} />
           <Route path="/chats" element={<Chats />} />
           <Route path="/chats/:name" element={<ChatScreen />} />
-          {/*TODO: create MessagePage component*/}
           <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/addphotos" element={<AddPhotos />} />
-          <Route path="/instructions" element={<Instructions />} />
-          <Route path="/demo" element={<Demo />} />
         </Routes>
       </div>
       <div className="bg-blue-200">
