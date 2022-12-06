@@ -4,20 +4,20 @@ import TinderCard from 'react-tinder-card'
 function SwipePage() {
   const db = [
     {
-      name: 'Super',
+      name: 'Supercar Blondie',
       url: '../../server/public/images/super.jpg',
     },
     {
-      name: 'Mini',
+      name: 'Kate',
       url: '../../server/public/images/women.jpg',
     },
 
     {
-      name: 'Baby',
+      name: 'LiL Baby',
       url: '../../server/public/images/baby.jpg',
     },
     {
-      name: 'G63',
+      name: 'Nade',
       url: '../../server/public/images/g63.png',
     },
     {
@@ -26,12 +26,13 @@ function SwipePage() {
       details: 'I love Holdens!',
     },
     {
-      name: 'Gtr',
+      name: 'Tanner',
       url: '../../server/public/images/gtr.jpg',
     },
     {
       name: 'CR7',
       url: '../../server/public/images/cr7.jpg',
+      details: 'SUUUUIIIII',
     },
     {
       name: 'Helana',
@@ -41,6 +42,7 @@ function SwipePage() {
     {
       name: 'Drake',
       url: '../../server/public/images/drake.jpg',
+      details: '',
     },
     {
       name: 'Johnny',
@@ -49,8 +51,9 @@ function SwipePage() {
     },
 
     {
-      name: 'Pop',
+      name: 'Pop Smoke',
       url: '../../server/public/images/pops.jpg',
+      details: 'WOO',
     },
     {
       name: 'Jared',
@@ -60,6 +63,7 @@ function SwipePage() {
     {
       name: 'Tate',
       url: '../../server/public/images/ggs.jpg',
+      details: 'What colour is your Bugatti?',
     },
     {
       name: 'Hasbulla',
@@ -72,7 +76,7 @@ function SwipePage() {
     {
       name: 'Paul',
       url: '../../server/public/images/paul.jpg',
-      details: 'When you drive, make sure you do it in style.',
+      details: 'Dude I Almost Had You!',
     },
   ]
   const characters = db

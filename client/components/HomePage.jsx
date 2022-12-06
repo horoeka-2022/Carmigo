@@ -25,7 +25,7 @@ function HomePage() {
 
   return (
     <>
-      <section className="h-screen w-screen flex flex-col bg-blue-500 text-white items-center">
+      <section className="h-screen w-screen flex flex-col bg-blue-400 text-white items-center">
         <div className="flex flex-col h-full w-full justify-center items-center">
           <img
             className="h-25 w-72 justify-center"
