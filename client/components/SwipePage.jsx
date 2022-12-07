@@ -61,6 +61,11 @@ function SwipePage() {
       details: 'Toyotas are the best!',
     },
     {
+      name: 'Elvin',
+      url: '../../server/public/images/elvin.jpg',
+      details: 'Toyota Crown - PinkSlips?',
+    },
+    {
       name: 'Tate',
       url: '../../server/public/images/ggs.jpg',
       details: 'What colour is your Bugatti?',
