@@ -21,7 +21,7 @@ function Tutorial() {
         </div>
         <Link to="/demo">
           <div className="h-min grid grid-cols-1 justify-items-center mt-20">
-            <button className="border-solid border-2 px-14 py-2 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400 ">
+            <button className="border-solid border-2 px-14 py-2 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400 font-black">
               Start Tutorial
             </button>
           </div>

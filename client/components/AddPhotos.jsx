@@ -74,7 +74,7 @@ function AddPhotos() {
         onClick={handleClick}
         className="border-solid mt-28 border-2 px-7 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400 hover:scale-105 absolute bottom-20 "
       >
-        <h4 className="font-bold"> Continue to Tutorial</h4>
+        <h4 className="font-black"> Continue to Tutorial</h4>
       </button>
     </div>
   )

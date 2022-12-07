@@ -12,13 +12,37 @@ function ChatScreen() {
         name: 'George',
         profilePic:
           'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-        message: 'Nice',
+        message: 'Hi',
       },
       {
         name: 'George',
         profilePic:
           'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-        message: 'My family all have Saabs! My first car was an 9-3 Aero',
+        message: 'Nice to meet you!',
+      },
+      {
+        name: 'George',
+        profilePic:
+          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        message: 'I like your car. What are the specs?',
+      },
+      {
+        name: 'George',
+        profilePic:
+          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        message: 'If you would like we should do a car meet up sometime.',
+      },
+      {
+        name: 'George',
+        profilePic:
+          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        message: 'Let me know if you are keen.',
+      },
+      {
+        name: 'George',
+        profilePic:
+          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        message: 'Thanks',
       },
       {
         name: 'Mike',
@@ -28,7 +52,7 @@ function ChatScreen() {
       },
       {
         name: 'Jess',
-        message: 'Sweet ride!',
+        message: 'Howdy!?',
         profilePic:
           'https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
       },
