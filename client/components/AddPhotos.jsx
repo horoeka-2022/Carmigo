@@ -24,11 +24,10 @@ function AddPhotos() {
     }
   }
 
-
   return (
     <div className="flex flex-col h-full justify-center items-center">
       <div className="flex flex-col justify-center items-center">
-        <div className="snap-x text-black text-xl font-bold ...">
+        <div className="snap-x text-black text-xl font-bold ... absolute top-36">
           <div className="snap-center py-1">Tell us more about your car</div>
         </div>
         <input
@@ -37,30 +36,45 @@ function AddPhotos() {
           onChange={(e) => handleChange(e)}
           value={carDescription}
         />
-        <div className="grid grid-rows-1 grid-cols-3 gap-2">
-          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative">
+        <div className="h-5"></div>
+        <div className="grid grid-rows-1 grid-cols-3 gap-2 ">
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
             <i className="absolute bottom-0 right-0 text-3xl">
-              <AiFillPlusCircle />
+              <AiFillPlusCircle className="hover:scale-125" />
             </i>
           </div>
-
-          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative">
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
             <i className="absolute bottom-0 right-0 text-3xl">
-              <AiFillPlusCircle />
+              <AiFillPlusCircle className="hover:scale-125" />
             </i>
           </div>
-          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative">
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
             <i className="absolute bottom-0 right-0 text-3xl">
-              <AiFillPlusCircle />
+              <AiFillPlusCircle className="hover:scale-125" />
+            </i>
+          </div>
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
+            <i className="absolute bottom-0 right-0 text-3xl">
+              <AiFillPlusCircle className="hover:scale-125" />
+            </i>
+          </div>
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
+            <i className="absolute bottom-0 right-0 text-3xl">
+              <AiFillPlusCircle className="hover:scale-125" />
+            </i>
+          </div>
+          <div className="w-[30vw] h-[20vh] bg-slate-200 border-dotted border-2 border-black relative hover:bg-white rounded-xl">
+            <i className="absolute bottom-0 right-0 text-3xl">
+              <AiFillPlusCircle className="hover:scale-125" />
             </i>
           </div>
         </div>
       </div>
       <button
         onClick={handleClick}
-        className="border-solid mt-28 border-2 px-3 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400  "
+        className="border-solid mt-28 border-2 px-7 py-2 my-5  border-white rounded-3xl text-center text-lg bg-gradient-to-r from-sky-400 to-indigo-400 hover:scale-105 absolute bottom-20 "
       >
-        Continue to Tutorial
+        <h4 className="font-bold"> Continue to Tutorial</h4>
       </button>
     </div>
   )
