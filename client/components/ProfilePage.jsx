@@ -27,7 +27,7 @@ function ProfilePage() {
               </i>
             </Link>
           </div>
-          <p className="justify-self-center font-bold text-sm mt-2 text-gray-700">
+          <p className="justify-self-center font-bold text-med mt-2 text-gray-700">
             Settings
           </p>
         </div>
@@ -39,7 +39,7 @@ function ProfilePage() {
               </i>
             </Link>
           </div>
-          <p className="justify-self-center font-bold text-sm mt-2 text-gray-700">
+          <p className="justify-self-center font-bold text-med mt-2 text-gray-700">
             Edit Profile
           </p>
         </div>
@@ -55,7 +55,7 @@ function ProfilePage() {
               </i>
             </Link>
           </div>
-          <p className="justify-self-center font-bold text-sm mt-2 text-gray-700">
+          <p className="justify-self-center font-bold text-med mt-2 text-gray-700">
             Log Out
           </p>
         </div>
@@ -65,7 +65,7 @@ function ProfilePage() {
           Get CarMigo Gold
         </div>
         <div className="mt-6 text-lg">See who Likes your car & more!</div>
-        <button className="hover:scale-105 border-solid border-2 px-20 py-3 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400">
+        <button className="hover:scale-105 border-solid border-2 px-16 py-3 my-5 border-white rounded-3xl text-center text-xl bg-gradient-to-r from-sky-400 to-indigo-400">
           Get CarMigo Gold
         </button>
       </div>
