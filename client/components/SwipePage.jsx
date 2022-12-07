@@ -24,11 +24,6 @@ function SwipePage() {
       details: 'G63 AMG. Love road trips.',
     },
     {
-      name: 'Krys',
-      url: '../../server/public/images/krys.jpg',
-      details: 'I love Holdens!',
-    },
-    {
       name: 'Tanner',
       url: '../../server/public/images/gtr.jpg',
       details: 'R35 GTR. Drive the best, or drive nothing.',
@@ -39,36 +34,14 @@ function SwipePage() {
       details: 'SUUUUIIIIIIIII. I like stylish cars.',
     },
     {
-      name: 'Helana',
-      url: '../../server/public/images/helana.jpg',
-      details: 'Outlander. Driving with style',
-    },
-
-    {
       name: 'Drake',
       url: '../../server/public/images/drake.jpg',
       details: "RR Ghost. It's driving time!",
     },
     {
-      name: 'Johnny',
-      url: '../../server/public/images/johnny.jpg',
-      details: 'Nissans are the coolest!',
-    },
-
-    {
       name: 'Pop Smoke',
       url: '../../server/public/images/pops.jpg',
       details: 'Bentayga. No road is long with good company.',
-    },
-    {
-      name: 'Jared',
-      url: '../../server/public/images/jared.jpg',
-      details: 'Toyotas are the best!',
-    },
-    {
-      name: 'Elvin',
-      url: '../../server/public/images/elvin.jpg',
-      details: 'Toyota Crown - PinkSlips?',
     },
     {
       name: 'Tate',
@@ -82,15 +55,40 @@ function SwipePage() {
         'Lambo Gallardo. Everything in life is somewhere else, and you get there in a car.',
     },
     {
+      name: 'Paul',
+      url: '../../server/public/images/paul.jpg',
+      details:
+        'R34 GTR V-Spec. Sometimes, the best therapy is a long drive and music.',
+    },
+    {
+      name: 'Helana',
+      url: '../../server/public/images/helana.jpg',
+      details: 'Outlander. Driving with style',
+    },
+    {
+      name: 'Krys',
+      url: '../../server/public/images/krys.jpg',
+      details: 'I love Holdens!',
+    },
+    {
+      name: 'Jared',
+      url: '../../server/public/images/jared.jpg',
+      details: 'Toyotas are the best!',
+    },
+    {
+      name: 'Johnny',
+      url: '../../server/public/images/johnny.jpg',
+      details: 'Nissans are the coolest!',
+    },
+    {
       name: 'Clem',
       url: '../../server/public/images/clem.jpg',
       details: 'Toyota Vitz. Some days, nothing beats a really good drive.',
     },
     {
-      name: 'Paul',
-      url: '../../server/public/images/paul.jpg',
-      details:
-        'R34 GTR V-Spec. Sometimes, the best therapy is a long drive and music.',
+      name: 'Elvin',
+      url: '../../server/public/images/elvin.jpg',
+      details: 'Toyota Crown - PinkSlips?',
     },
   ]
   const characters = db

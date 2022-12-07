@@ -75,19 +75,21 @@ function ChatScreen() {
     scrollToBottom()
   }, [messages])
 
-  const handleSend = (e) => {
-    e.preventDefault()
+  function handleSend(e) {
     setMessages([
       ...messages,
       {
         message: input,
         name: 'Frances',
-        profilePic:
-          'https://media-exp1.licdn.com/dms/image/C4E03AQGKRhR1FSrHXw/profile-displayphoto-shrink_800_800/0/1583271038766?e=2147483647&v=beta&t=q_AISORGqN9fK6wGhQSbpxHDjxUeUk3B5zbNRM6UOdU',
+        profilePic: '../../server/public/images/frances2.png',
       },
     ])
     socket.emit('chat message', input)
     setInput('')
+  }
+
+  function handleKeyUp(e) {
+    e.key === 'Enter' ? handleSend() : null
   }
 
   return (
@@ -132,6 +134,7 @@ function ChatScreen() {
             onChange={(x) => setInput(x.target.value)}
             className="flex grow m-2 focus:outline-none"
             placeholder="type a message..."
+            onKeyUp={handleKeyUp}
             type="text"
           />
         </div>

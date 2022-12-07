@@ -14,7 +14,7 @@ function ProfilePage() {
       <div className="flex justify-center items-center ">
         <img
           className="justify-self-center max-h-[35vh] max-w-[35vh] rounded-full"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQGKRhR1FSrHXw/profile-displayphoto-shrink_800_800/0/1583271038766?e=2147483647&v=beta&t=q_AISORGqN9fK6wGhQSbpxHDjxUeUk3B5zbNRM6UOdU"
+          src="../../server/public/images/frances2.png"
           alt="profileImage"
         />
       </div>
